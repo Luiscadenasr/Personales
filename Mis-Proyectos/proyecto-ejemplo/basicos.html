@@ -4,21 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Módulos en JavaScript</title>
 </head>
-
 <body>
-  <h1 id="titulo">Módulos4 en JavaScript2</h1>
+  <h1 id="titulo">Módulos en JavaScript</h1>
+
+<p> contenido visible</p>
+  
+<!--</ul>-->
+
+
  <script>
 
-  var hola = "Hola, soy un módulo en JavaScript";
-     //console.log(hola);
+ /*var hola = "Hola, soy un módulo en JavaScript";
+     console.log(hola);
   let hello = "Hola, soy un módulo en JavaScript";
-     //console.log(hello); 
+     console.log(hello); 
      console.log(typeof hola);
      console.log(typeof window.hello);
 
-     var musica="antes del blouq Rockggggg";
+     var musica="antes del blouqe Rockggggg";
       console.log(musica);
       console.log(typeof musica);
 
@@ -27,9 +33,231 @@
     console.log(musica);
     console.log(typeof musica); 
   }
- </script>
+
+const pi=3.1416;
+console.log(pi);  
+
+//pi=3.14;
+
+let objeto = {
+  nombre: "Juan",
+  edad: 30
+}
+
+  let colores =["VERDE","AZUL","ROJO","MARRON"];
+  
+  console.log(objeto.nombre, objeto.edad);
+
+  console.log(colores);
+
+objeto.correo = "luiscadenasr@gmail.com";
+
+colores.push("morado");
+
+
+
+console.log(objeto);
+console.log(colores);
+
+//Cadenas de texto
+
+let nombre = "luis";
+let apellido = 'cadenas';
+let saludo = new String ("Hola mundo");
+let lorem = "          Lorem, ipsum dolor, sit amet, consectetur adipiscing, elit.";
+
+console.log(lorem);
+console.log(nombre,apellido,saludo);
+
+
+console.log(
+  
+
+lorem.length,
+saludo.toUpperCase(),
+nombre.concat(" ",apellido),
+apellido.toLowerCase(),
+
+);  
+
+
+nombre= "luis";
+apellido = 'cadenas'; 
+
+saludo = `       Hola ${nombre} ${apellido}, bienvenido a JavaScript`; 
+
+console.log(saludo);
+
+lorem.includes("amet");
+console.log(lorem.includes("amet"));
+lorem
+lorem.trim();
+console.log(lorem.trim());
+//lorem.split(",");
+console.log(lorem.split(","));  
+
+let ul= 
+`<ul>
+  <li>primavera 1</li>
+  <li>verano 2</li>
+  <li>otoño 3</li>
+  <li>invierno 4</li>
+</ul>`;
+
+console.log(ul);
+
+
+
+//let saludo = ` hola ${nombre} ${apellido}, bienvenido a JavaScript`;
+
+let a=2
+let b=new Number(3);
+let c= 7.19
+console.log(a,b,c);
+ console.log(c.toFixed(1)); */
+
+//function saludar(nombre,apellido,edad){
+
+/* return 19;
+
+console.log(`Hola ${nombre} ${apellido}, tienes ${edad} años.`);    
+
+
+
+console.log("esta es un prueba");
+console.log("esta es un prueba3");
+
+return console.log("esta es un prueba4");
+
+
+}
+
+saludar("luis","cadenas",30);*/
+  
+
+
+//funcion declarada
+ // laDeclarada();
+
+//function laDeclarada() {
+  //console.log("Hola, soy una función declarada");
+  
+//}
+
+//funcion expresada
+//laExpresada();
+
+//const laExpresada = function() {
+  //console.log("Hola, soy una función expresada");
+  
+//}
+
+//laExpresada();
+
+const arreglo = [1,2,3,4,5,"texto", true, ["otro","arreglo","interno"]];
+
+// console.log(arreglo);
+
+// console.log(arreglo[4],arreglo[5],arreglo[7][2]);
+
+
+let frutas = ["Manzana", "Banana"];
+
+// console.log(frutas.length);
+// 2
+
+let primero = frutas[0];
+// Manzana
+// console.log(primero);
+
+let ultimo = frutas[1];
+// Banana
+// console.log(ultimo);  
+
+// console.log("ya funciona");
+         
+let a=new String("Hola, soy una cadenas");
+
+// console.log(a);
+
+const obj = {
+  nombre: "Luis",
+  apellido: "Cadenas",
+  edad: 30,
+  contactos: ["mahil", "tele", "carggta"],
+
+  decirMiNombre: function () {  
+  }
+}
+
+// console.log(`Hola, mi nombre es ${obj.nombre} ${obj.apellido}`); 
+// console.log(obj.apellido);
+
+     
+  //}
+  
+  // console.log(obj["nombre"], obj["apellido"], obj["edad"], obj["contactos"][0]);
+
+  // console.log(obj.nombre, obj.apellido, obj.edad, obj.contactos[2]);
+
+ 
+// console.log(obj.apellido, obj.contactos[2]);  
+//["nombre"], obj["apellido"], obj["edad"]);
+ //obj//["contactos"][2]);
+
+
+const b={};
+console.log(b);
+
+const c=new Object();
+console.log(c);
+
+const luis={
+  nombre:"luis",
+  apellido:"Cadenas",
+  edad:65,
+  pasatiempos:["correr","ejercicio","dar clases"],
+  soltero:false,
+  contacto:{
+    "email": "luiscadenasr@gmail.com",
+    "twitter": "@luiscadenas",
+    "telefono": "123456789"},
+
+    // saludar:function() {
+    //   console.log(`Hola, mi nombre es }  
+    //   {luis.nombre} ${this.apellido}, tengo ${this.edad} años y mis pasatiempos son ${this.pasatiempos}.`);
+    //   }
+    
+  };
+  //  console.log(luis);
+  
+  // console.log (luis.pasatiempos [0]);
+  
+  
+  
+luis.decirMiNombre = function () {
+
+  console.log(`Hola, mi nombre es ${this.nombre} ${this.apellido}, tengo ${this.edad} años y mis pasatiempos son ${this.pasatiempos}.`);
+  
+}
+
+// console.log(
+  
+luis.decirMiNombre();
+
+
+
+// console.log(luis.contacto.email, luis.contacto.twitter, luis.contacto.telefono);
+
+
+
+</script>
+
 </body>
 
+
+
 </html>
+
 
 
