@@ -36,18 +36,58 @@ if (hora >=0 && hora <=5){
 console.log("operador ternario");
 
 
-let edad=13;
+/* let edad=13;
 let eresMayor=(edad>=16)
 ? "Eres mayor de edad " +    edad:
 "Eres menor de edad " + edad
 
-console.log(eresMayor);
+console.log(eresMayor); */
 
 
+// switch-case
 
+domingo=1
+lunes =2
+martes=3        
+miercoles=4
+jueves=5
+viernes=6
+sabado=7    
 
+let dia=-2  ;
 
+while (dia <=7) {
+    dia++;
 
+switch (dia) {
+    case 1:
+        console.log("Domingo "+ dia);
+        break;
+    case 2:
+        console.log("Lunes " + dia);
+        break;
+    case 3:
+        console.log("Martes " + dia);
+        break;
+    case 4:
+        console.log("Miercoles " + dia);
+        break;
+    case 5:
+        console.log("Jueves " + dia);
+        break;
+    case 6:
+        console.log("Viernes " + dia);
+        break;
+    case 7:
+        console.log("Sabado " + dia);
+        break;
+
+    default:
+        console.log("Dia no valido");
+        break;
+}   
+
+}
 
 
 </SCRipt>
