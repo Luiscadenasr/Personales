@@ -89,7 +89,8 @@ switch (dia) {
 
 }
  */
-// let hola = "hola mundo";
+
+/* // let hola = "hola mundo";
 
  try {
     
@@ -101,9 +102,27 @@ switch (dia) {
 } finally {
     console.log("en el finally se ejecuta siempre");
 }
+ */
 
 
+// errores personalizados
 
+try {
+    let numero=-7;
+    if (numero <0) {
+        throw "El numero no puede ser negativo";
+    }
+xx
+
+    /* if (isNaN(numero)) {
+        throw "El numero no es un numero";
+        
+        console.log(`El numero es: $ {error}`);
+    } */
+
+} catch (error) {
+    console.log(`se produjo el siguiente error: ${error}`);
+}
 
 
 
