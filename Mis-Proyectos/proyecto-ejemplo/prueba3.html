@@ -107,12 +107,12 @@ switch (dia) {
 
 // errores personalizados
 
-try {
+/* try {
     let numero=-7;
     if (numero <0) {
         throw "El numero no puede ser negativo";
     }
-xx
+
 
     /* if (isNaN(numero)) {
         throw "El numero no es un numero";
@@ -120,10 +120,30 @@ xx
         console.log(`El numero es: $ {error}`);
     } */
 
-} catch (error) {
+/* } catch (error) {
     console.log(`se produjo el siguiente error: ${error}`);
+} */
+ 
+
+
+
+const numeros=[1,2,3,4,5,6,7,8,9,0];
+
+for(let i=0; i<numeros.length; i++){
+
+    if (i===5) {
+        break; //salta la iteracion actual
+    }   
+console.log(numeros[i]);
 }
 
+for(let i=0; i<numeros.length; i++){
+
+    if (i===5) {
+        continue; //salta la iteracion actual
+    }   
+console.log(numeros[i]);
+}
 
 
 
